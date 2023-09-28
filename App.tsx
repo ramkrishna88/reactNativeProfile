@@ -5,38 +5,38 @@
  * @format
  */
 
-import React, {useState} from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
-import {UserList, ProfileF} from './components';
+// import React, {useState} from 'react';
+// import {SafeAreaView, ScrollView} from 'react-native';
+// import {UserList, ProfileF} from './components';
 
-const App = () => {
-  const [userList, setUserList] = useState<any[]>([]);
+// const App = () => {
+//   const [userList, setUserList] = useState<any[]>([]);
 
-  const addUserToList = (userData: any) => {
-    // Generating a unique ID for each user (you may use a library like 'uuid' for this)
-    userData.id = Date.now().toString();
-    setUserList((prevUserList: any[]) => [...prevUserList, userData]);
-  };
+//   const addUserToList = (userData: any) => {
+//     // Generating a unique ID for each user (you may use a library like 'uuid' for this)
+//     userData.id = Date.now().toString();
+//     setUserList((prevUserList: any[]) => [...prevUserList, userData]);
+//   };
 
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <ScrollView>
-        <ProfileF
-          onSubmitPressed={(userData: any) => {
-            addUserToList(userData);
-          }}
-          onDeletePressed={() => {
-            setUserList([]);
-          }}
-        />
+//   return (
+//     <SafeAreaView style={{flex: 1}}>
+//       <ScrollView>
+//         <ProfileF
+//           onSubmitPressed={(userData: any) => {
+//             addUserToList(userData);
+//           }}
+//           onDeletePressed={() => {
+//             setUserList([]);
+//           }}
+//         />
 
-        {userList && userList.length > 0 && <UserList userData={userList} />}
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+//         {userList && userList.length > 0 && <UserList userData={userList} />}
+//       </ScrollView>
+//     </SafeAreaView>
+//   );
+// };
 
-export default App;
+// export default App;
 
 // ActivityIndicator code for the loading screen
 // import React from 'react';
