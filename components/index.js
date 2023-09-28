@@ -3,6 +3,6 @@
 //import UserList from './UserList';
 //import ProfileF from './Profile';
 //import FlatListView from './FlatListView';
-import App from './StatusBar';
+import App from './Switch';
 
 export {App};
