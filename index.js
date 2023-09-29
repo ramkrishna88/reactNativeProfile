@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import PressableF from './components/Pressable';
+import ScrollViewF from './components/ScrollView';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => PressableF);
+AppRegistry.registerComponent(appName, () => ScrollViewF);
