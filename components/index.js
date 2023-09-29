@@ -3,6 +3,6 @@
 //import UserList from './UserList';
 //import ProfileF from './Profile';
 //import FlatListView from './FlatListView';
-import ModalApp from './ModalF';
+import PressableF from './Pressable';
 
-export {ModalApp};
+export {PressableF};
