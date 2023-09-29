@@ -3,6 +3,6 @@
 //import UserList from './UserList';
 //import ProfileF from './Profile';
 //import FlatListView from './FlatListView';
-import VirtualizedListF from './VirtualizedList';
+import VirtualizedListF from '.VirtualizedListF';
 
 export {VirtualizedListF};

@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import VirtualizedListF from './components/VirtualizedList';
+import NavigationComponent from './Navigation';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => VirtualizedListF);
+AppRegistry.registerComponent(appName, () => NavigationComponent);
