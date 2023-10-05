@@ -17,7 +17,13 @@ const HomeScreen = ({navigation}) => {
   }, []);
 
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'blue',
+      }}>
       <Image source={{uri: imageUri}} style={{width: 300, height: 500}} />
       <Button
         title="Go to Details"
