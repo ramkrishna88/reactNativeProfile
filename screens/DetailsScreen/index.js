@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import * as Animatable from 'react-native-animatable';
 
 const DetailsScreen = ({navigation}) => {
@@ -10,7 +10,7 @@ const DetailsScreen = ({navigation}) => {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'red',
+        backgroundColor: 'white',
       }}>
       <Text>Details Screen</Text>
       <Animatable.View
@@ -18,12 +18,12 @@ const DetailsScreen = ({navigation}) => {
         easing="ease-out"
         iterationCount="infinite"
         style={{
-          width: 200,
-          height: 200,
+          width: 230,
+          height: 300,
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <Icon name="heart" size={100} color="white" />
+        <Icon name="heart" size={250} color="red" />
         <Text>Heart Icon</Text>
       </Animatable.View>
       <Button
