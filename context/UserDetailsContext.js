@@ -49,18 +49,19 @@ export const UserDetailsProvider = ({children}) => {
     );
   };
 
+  const value = {
+    userDetails: getCurrentUserDetails(),
+    updateUserDetails,
+    addNewUsers,
+    nextUser,
+    prevUser,
+    currentIndex,
+    newUsers,
+    newUserIndex,
+  };
+
   return (
-    <UserDetailsContext.Provider
-      value={{
-        userDetails: getCurrentUserDetails(),
-        updateUserDetails,
-        addNewUsers,
-        nextUser,
-        prevUser,
-        currentIndex,
-        newUsers,
-        newUserIndex,
-      }}>
+    <UserDetailsContext.Provider value={value}>
       {children}
     </UserDetailsContext.Provider>
   );
