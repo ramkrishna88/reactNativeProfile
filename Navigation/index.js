@@ -71,7 +71,6 @@ const NavigationComponent = () => {
           <Tab.Screen name="Person" component={PersonScreen} />
           <Tab.Screen name="Search" component={SearchScreen} />
         </Tab.Navigator>
-        {/* Display user details card on top of all screens */}
         <UserDetailsCard />
       </UserDetailsProvider>
     </NavigationContainer>
